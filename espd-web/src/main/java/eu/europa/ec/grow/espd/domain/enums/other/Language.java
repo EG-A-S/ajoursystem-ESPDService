@@ -38,13 +38,15 @@ public enum Language {
 
     /**
      * Bulgarian
-     */
+
     BULGARIAN( "български", "Bulgarian", "bg"),
+     */
     /**
      * Czech
-     */
+
     CZECH("čeština", "Czech", "cs"),
-    /**
+     */
+     /**
      * Danish
      */
     DANISH( "Dansk", "Danish", "da"),
@@ -54,76 +56,92 @@ public enum Language {
     GERMAN("Deutsch", "German", "de"),
     /**
      * Estonian
-     */
+
     ESTONIAN( "Eesti keel", "Estonian", "et"),
-    /**
-     * Greek
      */
+     /**
+     * Greek
+
     GREEK("Eλληνικά", "Greek", "el"),
+    */
     /**
      * English
      */
     ENGLISH( "English", "English", "en"),
     /**
      * Spanish
-     */
+
     SPANISH( "Español", "Spanish", "es"),
+     */
     /**
      * French
-     */
+
     FRENCH( "Français", "French", "fr"),
-    /**
-     * Croatian
      */
+     /**
+     * Croatian
+
     CROATIAN( "Hrvatski", "Croatian", "hr"),
+    */
     /**
      * Italian
-     */
+
     ITALIAN( "Italiano", "Italian", "it"),
-    /**
+     */
+     /**
      * Latvian
-     */
+
     LATVIAN("Latviešu valoda", "Latvian", "lv"),
-    /**
+      */
+      /**
      * Lithuanian
-     */
+
     LITHUANIAN( "Lietuvių kalba", "Lithuanian", "lt"),
-    /**
+       */
+       /**
      * Hungarian
-     */
+
     HUNGARIAN( "Magyar", "Hungarian", "hu"),
-    /**
+        */
+       /**
      * Maltese
-     */
+
     MALTESE( "Malti", "Maltese", "mt"),
-    /**
+        */
+        /**
      * Dutch
-     */
+
     DUTCH( "Nederlands", "Dutch", "nl"),
-    /**
+         */
+         /**
      * Polish
      */
     POLISH( "Polski", "Polish", "pl"),
     /**
      * Portuguese
-     */
+
     PORTUGUESE( "Português", "Portuguese", "pt"),
+     */
     /**
      * Romanian
-     */
+
     ROMANIAN( "Română", "Romanian", "ro"),
+     */
     /**
      * Slovak
-     */
+
     SLOVAK( "Slovenčina", "Slovak", "sk"),
+     */
     /**
      * Slovenian
-     */
+
     SLOVENIAN( "Slovenščina", "Slovenian", "sl"),
+     */
     /**
      * Finnish
-     */
+
     FINNISH( "Suomi", "Finnish", "fi"),
+     */
     /**
      * Swedish
      */
