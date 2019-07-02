@@ -26,24 +26,4 @@
   ~
   --%>
 <div id="breadbar" class="hidden-print">
-    <s:eval var="breadcrumbAsMap" scope="page" expression="@espdConfiguration.breadcrumbAsMap"/>
-    <c:if test="${not empty breadcrumbAsMap}">
-        <ul class="breadcrumbs">
-            <c:forEach var="entry" items="${breadcrumbAsMap}" varStatus="status">
-                <li>
-                    <c:choose>
-                        <c:when test="${not status.last}">
-                            <a target="_blank" href="${entry.key}" data-i18n="${entry.value}"
-                               class="breadcrumbElement"><s:message
-                                    code="${entry.value}" text="${entry.value}"/></a>
-                        </c:when>
-                        <c:otherwise>
-                            <a href="${entry.key}" data-i18n="${entry.value}" class="breadcrumbElement"><s:message
-                                    code="${entry.value}" text="${entry.value}"/></a>
-                        </c:otherwise>
-                    </c:choose>
-                </li>
-            </c:forEach>
-        </ul>
-    </c:if>
 </div>

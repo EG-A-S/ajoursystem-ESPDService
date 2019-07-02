@@ -48,17 +48,14 @@
 <body>
 <div class="container panel" style="padding:0; border-color: #396ea2 !important;">
     <div id="header">
-        <img id="banner-flag-hidden" class="hidden-print" src="${pageContext.request.contextPath}/static/img/logo.png" alt="European Commission logo"/>
-        <img id="banner-flag-visible" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/logo.png" alt="European Commission logo"/>
+        <img id="banner-flag-hidden" class="hidden-print" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
+        <img id="banner-flag-visible" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
         <span id="banner-title-text-hidden" class="hidden-print">${span18n["app_title"]}</span>
         <span id="banner-title-text" style="font-size: 160%" class="visible-print">${span18n["app_title"]}</span>
         <span id="banner-image-title-fill"></span>
-        <span id="banner-sub-title-text" class="hidden-print" data-i18n="app_subtitle"><s:message code="app_subtitle"/></span>
+        <span id="banner-sub-title-text" class="hidden-print"></span>
         <div id="top-lang-selector" class="hidden-print">
             <ul class="reset-list">
-                <li><a target="_blank" href="http://ec.europa.eu/growth/legal-notice/index_en.htm">${span18n["legal_notice"]}</a></li>
-                <li><a target="_blank" href="http://ec.europa.eu/growth/cookies/index_en.htm">${span18n["cookies"]}</a></li>
-                <li><a target="_blank" href="${pageContext.request.contextPath}/contact">${span18n["contact"]}</a></li>
                 <li>
                     <label for="language"></label><select id="language">
                     <c:forEach var="lang" items="<%=Language.VALUES%>">
@@ -94,13 +91,5 @@
         </div>
     </footer>
 </div>
-<s:eval var="piwikEnabled" scope="page" expression='@espdConfiguration.piwikEnabled'/>
-<s:eval var="piwikServer" scope="page" expression='@espdConfiguration.piwikServer'/>
-<s:eval var="piwikId" scope="page" expression='@espdConfiguration.piwikId'/>
-<c:if test="${piwikEnabled == true}">
-	<script defer src="//europa.eu/webtools/load.js" type="text/javascript"></script>
-	<script type="application/json"> { "utility": "piwik", "siteID": 401, "sitePath": ["ec.europa.eu\/tools\/espd"] } </script>
-</c:if>
-
 </body>
 </html>

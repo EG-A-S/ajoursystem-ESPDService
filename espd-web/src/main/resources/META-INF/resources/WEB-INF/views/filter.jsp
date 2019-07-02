@@ -175,15 +175,7 @@
 			<ul class="fa-ul">
 				<li><i class="info-label fa fa-info-circle fa-lg fa-li"></i>
 					<div id="filter_text">${span18n['filter_alert']}</div>
-					<div id="filter_faq">
-						${span18n['faq_text_more_info']} <a
-							href='http://ec.europa.eu/growth/single-market/public-procurement/e-procurement/espd/index_en.htm'>
-							${span18n['click_here']} </a>
-						<p></p>
-						${span18n['faq_text_answers']} <a
-							href='http://ec.europa.eu/DocsRoom/documents/16002/attachments/1/translations/${pageContext.response.locale}/renditions/native'>
-							${span18n['faq_leaflet']} </a>
-					</div></li>
+				</li>
 			</ul>
 		</div>
 				
@@ -217,16 +209,6 @@
 							title="${i18n['tooltip_eo_ref_suppl']}"></span>
 					</div>
 				</div>
-				<div class="col-sm-9 col-md-9">
-					<div style="background-color: #ffe0b3; padding-right: 20px;">&nbsp;
-						<ul class="fa-ul">
-							<li><i class="alert-label fa fa-info-circle fa-lg fa-li">&nbsp;</i>
-								<div>${span18n["phase_out_text"]}</div>
-							</li>
-						</ul>
-						&nbsp;
-					</div>
-				</div>		
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane" id="tab_ca">
