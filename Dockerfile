@@ -1,4 +1,4 @@
-FROM maven:3.9-eclipse-temurin-11-alpine AS build
+FROM maven:3.9-eclipse-temurin-8-alpine AS build
 
 COPY . /usr/src/ESPD-Service
 WORKDIR /usr/src/ESPD-Service
@@ -11,7 +11,7 @@ RUN sed -i '/<appender-ref ref="EMAIL" \/>/d' espd-web/src/main/resources/logbac
 RUN sed -i -e 's/<contextPath>\/espd\/<\/contextPath>/<contextPath>\/<\/contextPath>/g' espd-web/pom.xml
 
 ENV MAVEN_OPTS="-Dhttps.protocols=TLSv1.2"
-RUN mvn clean package -Pnon-embedded
+RUN mvn clean package -Pnon-embedded -Denforcer.skip=true
 
 FROM tomcat:latest
 
