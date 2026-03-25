@@ -1,4 +1,4 @@
-FROM maven:3.5.0 AS build
+FROM maven:3.9-eclipse-temurin-11-alpine AS build
 
 COPY . /usr/src/ESPD-Service
 WORKDIR /usr/src/ESPD-Service
