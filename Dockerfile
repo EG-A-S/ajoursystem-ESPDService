@@ -13,7 +13,7 @@ RUN sed -i -e 's/<contextPath>\/espd\/<\/contextPath>/<contextPath>\/<\/contextP
 ENV MAVEN_OPTS="-Dhttps.protocols=TLSv1.2"
 RUN mvn clean package -Pnon-embedded -Denforcer.skip=true
 
-FROM tomcat:latest
+FROM tomcat:8-jre8
 
 RUN echo "export \"CATALINA_OPTS=$CATALINA_OPTS -Dspring.profiles.active=prod\"" > /usr/local/tomcat/bin/setenv.sh
 
