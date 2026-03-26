@@ -48,8 +48,8 @@
 <body>
 <div class="container panel" style="padding:0; border-color: #396ea2 !important;">
     <div id="header">
-        <img id="banner-flag-hidden" class="hidden-print" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
-        <img id="banner-flag-visible" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
+        <img id="banner-flag-hidden" class="hidden-print" src="${pageContext.request.contextPath}/static/img/EGAjourLogo.png" alt="EG Ajour logo"/>
+        <img id="banner-flag-visible" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/EGAjourLogo.png" alt="EG Ajour logo"/>
         <span id="banner-title-text-hidden" class="hidden-print">${span18n["app_title"]}</span>
         <span id="banner-title-text" style="font-size: 160%" class="visible-print">${span18n["app_title"]}</span>
         <span id="banner-image-title-fill"></span>

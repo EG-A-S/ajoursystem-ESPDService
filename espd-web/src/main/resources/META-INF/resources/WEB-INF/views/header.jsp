@@ -39,8 +39,8 @@
 </script>
 
 <div id="header">
-    <img id="banner-flag" class="hidden-print" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
-    <img id="banner-flag" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/logo.png" alt="Ajour System logo"/>
+    <img id="banner-flag" class="hidden-print" src="${pageContext.request.contextPath}/static/img/EGAjourLogo.png" alt="EG Ajour logo"/>
+    <img id="banner-flag" class="visible-print" style="width: 114px; height: 80px;" src="${pageContext.request.contextPath}/static/img/EGAjourLogo.png" alt="EG Ajour logo"/>
     <c:if test="${not empty applicationScope.deploymentEnvironment}">
 			<span id="banner-env-text">
 				<span id="environment">${applicationScope.deploymentEnvironment}</span>
